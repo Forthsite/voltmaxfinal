@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Voltmax.cz</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.css">
-  <script defer src="index33eb0a3031ed925beeb4.js"></script></head>
+  <script defer src="index831ff182c7d944d28259.js"></script></head>
   <style>
     #career::after {
   content: '';
@@ -59,11 +59,27 @@
   </style>
   <body class="bg-stone-100">
     <script src="index[contenthash].js"></script>
-    <div id="top" class="flex flex-col w-full h-screen bg-cover ">
+    <div id="mobilemenu" class="w-3/5 md:w-1/5 h-screen fixed bg-black/90 z-50 right-0 flex flex-col pt-4 hidden">
+      <ul class="menu flex flex-col items-center backdrop-blur-sm bg-opacity-30 gap-2 text-neutral-100 font-bold menu-horizontal rounded-box ">
+        <li class="hover:text-emerald-400"><a href="./#about">O nás</a></li>
+        <li class="hover:text-emerald-400"><a href="./fve-pro-rodinne-domy.html">FVE pro rodinné domy</a></li>
+        <li class="hover:text-emerald-400"><a href="./fve-pro-bytove-domy.html">FVE pro bytové domy</a></li>
+        <li class="hover:text-emerald-400"><a href="./fve-pro-firmy.html">FVE pro firmy</a></li>
+        <li class="hover:text-emerald-400">
+            <a href="./#others"><summary>Další služby</summary></a>
+        </li>
+        <li class="hover:text-emerald-400"><a href="./#servis">Servis</a></li>
+        <li class="hover:text-emerald-400"><a href="./#career">Kariéra</a></li>
+        <li class=""><a href="./#kontakt"><button class="btn btn-md flex justify-center bg-emerald-400 border-none text-gray-100 hover:bg-emerald-500">Kontaktujte nás</button></a></li>
+        <a href="tel:+420739859888"><li class="h-10"><img class="h-full w-full" id="teltop"></li></a>
+        <a href="https://www.instagram.com/voltmax.cz/" target="_blank" rel="noopener noreferrer"><li class="h-10"><img class="h-full w-full" id="igtop"></li></a>
+      </ul>
+    </div>
+    <div id="top" class="flex flex-col w-full md:h-screen bg-cover">
         <header class="flex justify-between bg-white drop-shadow-xl">
             <span id="topleft" class="flex items-center w-fit pr-12 -ml-3 bg-slate-950 -skew-x-12"><img class="logo transition-all w-32 h-fit ml-12 skew-x-12"></span>
             <span id="topright" class="p-6">
-                <ul class="menu flex bg-slate-400 items-center backdrop-blur-sm bg-opacity-30 gap-8 text-slate-700 font-bold menu-horizontal rounded-box ">
+                <ul class="menu hidden xl:flex bg-slate-400 items-center backdrop-blur-sm bg-opacity-30 gap-8 text-slate-700 font-bold menu-horizontal rounded-box ">
                     <li class="hover:text-emerald-400 hidden xl:block"><a href="./#about">O nás</a></li>
                     <li class="hover:text-emerald-400 hidden xl:block"><a href="./fve-pro-rodinne-domy.html">FVE pro rodinné domy</a></li>
                     <li class="hover:text-emerald-400 hidden xl:block"><a href="./fve-pro-bytove-domy.html">FVE pro bytové domy</a></li>
@@ -77,11 +93,14 @@
                     <a href="tel:+420739859888"><li class="h-10"><img class="h-full w-full" id="teltop"></li></a>
                     <a href="https://www.instagram.com/voltmax.cz/" target="_blank" rel="noopener noreferrer"><li class="h-10"><img class="h-full w-full" id="igtop"></li></a>
                   </ul>
+                  <div id="hamburger" class="w-12 xl:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M80 160h352M80 256h352M80 352h352"/></svg>
+                  </div>
             </span>
         </header>
-        <div id="herogrp" class="flex flex-col items-center m-auto gap-20 z-50">
+        <div id="herogrp" class="flex flex-col items-center m-auto gap-20 z-40 p2 py-12 md:py-0">
           <span id="hero" class="font-bold text-gray-50 text-4xl sm:text-5xl uppercase w-3/4 text-center">Fotovoltaická elektrárna pro rodinný dům</span>
-          <span id="subtext" class="text-3xl text-gray-50 bg-slate-400 backdrop-blur-sm bg-opacity-30 py-6 px-12 rounded-xl w-3/4 text-center">Kompletní dodání fotovoltaiky na klíč<br>Smluvní GARANCE získání dotace<br>Instalace do 30 dnů<br>Bez záloh předem</span>
+          <span id="subtext" class="text-lg md:text-3xl text-gray-50 bg-slate-400 backdrop-blur-sm bg-opacity-30 py-6 px-12 rounded-xl w-3/4 text-center">Kompletní dodání fotovoltaiky na klíč<br>Smluvní GARANCE získání dotace<br>Instalace do 30 dnů<br>Bez záloh předem</span>
           <div class="flex gap-10">
             <a href="#kontakt"><button class="btn btn-md sm:btn-md md:btn-md lg:btn-lg bg-emerald-400 border-none text-gray-100 hover:bg-emerald-500">Rezervujte si Voltmax</button></a>
             <a href="#about"><button class="btn btn-md sm:btn-md md:btn-md lg:btn-lg bg-emerald-400 border-none text-gray-100 hover:bg-emerald-500">Další informace</button></a>
@@ -449,7 +468,7 @@
           </defs>
       </svg>
   </div>
-    <img id="imgfvec" class="w-full h-auto lg:h-96 rounded-lg z-50" alt="">
+    <img id="imgfvec" class="w-full h-auto lg:h-96 rounded-lg z-40" alt="">
   </div>
 </section>
 </div>
